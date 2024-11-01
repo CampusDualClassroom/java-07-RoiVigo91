@@ -36,7 +36,7 @@ public class Exercise07 {
         }
     }
 
-    //TODO ↓
+
     // Que imprima como mensaje la suma de los primeros N números positivos
     public static void sumFirstNaturalNumbers(int num) {
         if (num <= 0){
@@ -58,7 +58,7 @@ public class Exercise07 {
 
     }
 
-    //TODO ↓
+
     // Que imprima por pantalla los N primeros números positivos
     public static void showFirstNaturalNumbers(int num) {
         if ( num < 0 ){
