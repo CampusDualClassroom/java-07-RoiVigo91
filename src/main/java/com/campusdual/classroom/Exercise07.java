@@ -63,20 +63,21 @@ public class Exercise07 {
     public static void showFirstNaturalNumbers(int num) {
         if ( num < 0 ){
             System.out.println("Error! Introducir un numero positivo");
-            return;
-
-        }
-
-        StringBuilder builder = new StringBuilder("Los primeros naturales de " + num + " son: ");
 
 
-        for(int i = 1; i <= num;i++){
-            builder.append(i);
-            if (i< num){
-                builder.append(" ");
+        }else {
+
+            StringBuilder builder = new StringBuilder("Los primeros naturales de " + num + " son: ");
+
+
+            for (int i = 1; i <= num; i++) {
+                builder.append(i);
+                if (i < num) {
+                    builder.append(" ");
+                }
             }
+            System.out.println(builder);
         }
-        System.out.println(builder);
 
     }
 
