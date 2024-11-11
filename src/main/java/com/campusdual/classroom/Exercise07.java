@@ -41,20 +41,21 @@ public class Exercise07 {
     public static void sumFirstNaturalNumbers(int num) {
         if (num <= 0){
             System.out.println("Error! Introduzca un numero entero positivo");
-            return;
-        }
 
-        StringBuilder builder = new StringBuilder("Suma de los primeros " + num + " numeros naturales: ");
+        }else {
 
-        int suma = 0;
-        for(int i = 1; i <= num;i++){
-            suma += i;
-            builder.append(i);
-            if (i< num){
-                builder.append("+");
+            StringBuilder builder = new StringBuilder("Suma de los primeros " + num + " numeros naturales: ");
+
+            int suma = 0;
+            for (int i = 1; i <= num; i++) {
+                suma += i;
+                builder.append(i);
+                if (i < num) {
+                    builder.append("+");
+                }
             }
+            System.out.println(builder + " = " + suma);
         }
-        System.out.println(builder + " = " + suma);
 
     }
 
